@@ -26,7 +26,7 @@ public class Pasaporte {
     public Foto getFoto() { 
         return foto; 
     }
-
+    
     public Titular getTitular() { 
         return titular; 
     }
