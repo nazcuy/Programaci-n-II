@@ -46,6 +46,7 @@ public class Main {
         System.out.println("\n");
         
         // 8. Mostrar la cantidad total de libros en la biblioteca.
+        System.out.println("=== CANTIDAD TOTAL ===");
         System.out.println("Cantidad total de libros: " + biblioteca.obtenerCantidadLibros());
         System.out.println("\n");
         
