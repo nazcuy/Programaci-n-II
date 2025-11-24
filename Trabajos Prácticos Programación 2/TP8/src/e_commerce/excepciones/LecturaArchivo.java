@@ -10,7 +10,6 @@ public class LecturaArchivo {
         System.out.println("\n--- Intentando leer archivo INEXISTENTE ---");
         leerArchivo("archivo_inexistente.txt");
     }
-
     public static void leerArchivo(String nombreArchivo) {
         File archivo = new File(nombreArchivo);
         Scanner scanner = null;
@@ -18,7 +17,7 @@ public class LecturaArchivo {
         try {
             scanner = new Scanner(archivo);
             System.out.println("Contenido de '" + nombreArchivo + "':");
-            
+
             int contador = 0;
             while (scanner.hasNextLine()) {
                 String linea = scanner.nextLine();
@@ -33,7 +32,6 @@ public class LecturaArchivo {
             System.out.println("Ruta: " + archivo.getAbsolutePath());
         } 
     }
-
     public static void crearArchivoPrueba() {
         try {
             java.io.FileWriter escrito = new java.io.FileWriter("archivo_prueba.txt");
